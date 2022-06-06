@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Quiz</title>
+  </head>
+  <body>
+    <div class="quiz__wrapper">
+      <div class="quiz__body">
+        <div class="quiz__progress progress">
+          <div
+            class="progress__bar"
+            aria-valuenow="0"
+            aria-valuemax="100"
+            aria-valuemin="0"
+            role="progressbar"
+          ></div>
+        </div>
+
+        <div class="quiz__main">
+          <div class="quiz__question">
+            <span>Какой тип сайта Вам нужен?</span>
+          </div>
+          <ul class="quiz__answers">
+            <li data-quiz-answer="1" class="quiz__answers"></li>
+            <li data-quiz-answer="2" class="quiz__answer"></li>
+            <li data-quiz-answer="3" class="quiz__answer"></li>
+            <li data-quiz-answer="4" class="quiz__answer"></li>
+            <li data-quiz-answer="5" class="quiz__answer"></li>
+          </ul>
+        </div>
+        <div class="quiz__btns">
+          <button data-quiz-btn="prev" class="quiz__btn">Назад</button>
+          <button data-quiz-btn="next" class="quiz__btn">Продолжить</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

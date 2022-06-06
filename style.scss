@@ -1,0 +1,211 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    &::before,
+    &::after {
+        box-sizing: border-box;
+    }
+}
+:focus,
+:active {
+    outline: none;
+}
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+html,
+body {
+    font-size: 100%;
+    line-height: 1;
+    -webkit-text-size-adjust: 100%;
+    height: 100vh;
+    width: 100%;
+    background-color: #131319;
+    font-family: "Roboto", sans-serif;
+}
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+input::-ms-clear {
+    display: none;
+}
+button {
+    cursor: pointer;
+}
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+a {
+    &:focus,
+    &:active {
+        outline: none;
+    }
+    &:visited,
+    &:hover {
+        text-decoration: none;
+    }
+}
+ul li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+// quiz
+.quiz {
+    // .quiz__wrapper
+    color: white;
+    &__wrapper {
+        padding: 15px;
+    }
+
+    // .quiz__body
+
+    &__body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    // .quiz__progress
+
+    &__progress {
+    }
+
+    // .quiz__main
+
+    &__main {
+        flex-grow: 2;
+    }
+
+    // .quiz__question
+
+    &__question {
+        color: #fff;
+        font-size: 30px;
+        line-height: 150%;
+        text-align: center;
+        margin: 10vh 0;
+        @media (max-width: 600px) {
+            font-size: 6.5vw;
+        }
+    }
+
+    // .quiz__answers
+
+    &__answers {
+    }
+
+    // .quiz__answer
+
+    &__answer {
+    }
+
+    // .quiz__btns
+
+    &__btns {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        column-gap: 30px;
+        color: white;
+        button {
+            background: transparent;
+            color: inherit;
+            padding: 5px 20px;
+            border-radius: 20px;
+            border: 1px solid #fff;
+            &:hover {
+                background: #fff;
+                color: #131319;
+                transition: all 0.3s linear;
+                animation: quiz__btns 0.3s;
+            }
+            &:disabled {
+                background: red;
+            }
+        }
+        // ::after {
+        //     content: "";
+        //     display: block;
+        //     width: 40px;
+        //     height: 300px;
+        //     margin-left: 60px;
+        //     background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+        //     position: absolute;
+        //     left: -40px;
+        //     top: -150px;
+        //     z-index: 1;
+        //     -webkit-transform: rotate(45deg);
+        //     transform: rotate(45deg);
+        //     -webkit-transition: all 0.1s;
+        //     transition: all 0.1s;
+        //     -webkit-animation-name: slideme;
+        //     animation-name: slideme;
+        //     -webkit-animation-duration: 6s;
+        //     animation-duration: 6s;
+        //     -webkit-animation-delay: 0.05s;
+        //     animation-delay: 0.05s;
+        //     -webkit-animation-timing-function: ease-in-out;
+        //     animation-timing-function: ease-in-out;
+        //     -webkit-animation-iteration-count: infinite;
+        //     animation-iteration-count: infinite;
+        // }
+    }
+
+    // .quiz__btn
+
+    &__btn {
+    }
+}
+.progress {
+    width: 50vw;
+    border-radius: 20px;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    // .progress__bar
+    &__bar {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        padding: 0 10px;
+        align-items: center;
+        flex-wrap: nowrap;
+        width: 100%;
+        border-radius: 20px;
+        height: 24px;
+        display: inline-flex;
+    }
+}
+
+@keyframes quiz__btns {
+    0% {
+    }
+    100% {
+    }
+}
